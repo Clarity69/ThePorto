@@ -1,4 +1,4 @@
-### Porto
+# Porto
 <div align="center">
   <p><strong>Modern, Modular Terminal-Inspired Portfolio</strong></p>
 
