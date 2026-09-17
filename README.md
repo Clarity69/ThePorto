@@ -1,6 +1,5 @@
+### Porto
 <div align="center">
-
-  <h1><code>< Clarity69 /></code></h1>
   <p><strong>Modern, Modular Terminal-Inspired Portfolio</strong></p>
 
   <!-- Banner Preview -->
