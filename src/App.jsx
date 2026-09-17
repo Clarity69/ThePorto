@@ -4,6 +4,8 @@ import About from "./sections/About";
 import Skills from "./sections/Skills";
 import Projects from "./sections/Projects";
 import Connect from "./sections/Connect";
+import { Analytics } from '@vercel/analytics/react';
+
 
 export default function App() {
   return (
@@ -15,6 +17,7 @@ export default function App() {
         <Skills />
         <Projects />
         <Connect />
+        <Analytics />
       </main>
     </div>
   );
