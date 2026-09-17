@@ -4,7 +4,7 @@
   <p><strong>Modern, Modular Terminal-Inspired Portfolio</strong></p>
 
   <!-- Banner Preview -->
-  <img src="./public/preview.png" alt="Portfolio Preview" width="100%" style="border-radius: 8px;" />
+  <img src="./public/image1.png" alt="Portfolio Preview" width="100%" style="border-radius: 8px;" />
 
   <br />
   <br />
