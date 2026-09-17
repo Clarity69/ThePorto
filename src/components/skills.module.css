@@ -1,0 +1,106 @@
+.skills {
+    padding: 5rem 0;
+    background-color: #0d0e12;
+    border-top: 1px solid #1e2028;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.categorySub {
+    font-family: monospace;
+    font-size: 0.75rem;
+    color: #f59e0b;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 0.25rem;
+}
+
+.sectionTitle {
+    font-family: monospace;
+    font-size: 1.75rem;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.titleHash {
+    color: #f59e0b;
+}
+
+.subtitle {
+    color: #94a3b8;
+    font-size: 0.95rem;
+    max-width: 600px;
+    line-height: 1.6;
+    margin-bottom: 3rem;
+}
+
+/* Grid 3 Kolom */
+.skillsGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+}
+
+.columnHeader {
+    border-top: 1px solid #1e2028;
+    padding-top: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+.columnTitle {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #f8fafc;
+    margin-bottom: 0.25rem;
+}
+
+.columnSub {
+    font-family: monospace;
+    font-size: 0.75rem;
+    color: #f59e0b;
+}
+
+/* Group Badge/Pill */
+.badgeContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+}
+
+.skillBadge {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #12141a;
+    border: 1px solid #212530;
+    padding: 0.5rem 0.85rem;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    color: #e2e8f0;
+    transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.skillBadge:hover {
+    border-color: #f59e0b;
+    transform: translateY(-2px);
+}
+
+.badgeIcon {
+    color: #f59e0b;
+    font-size: 0.9rem;
+}
+
+/* Responsive Layout */
+@media (max-width: 900px) {
+    .skillsGrid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}

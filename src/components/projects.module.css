@@ -1,0 +1,213 @@
+.projects {
+    padding: 5rem 0;
+    background-color: #0d0e12;
+    border-top: 1px solid #1e2028;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Sub-judul kecil di atas #title (PROJECTS & MORE) */
+.categorySub {
+    font-family: monospace;
+    font-size: 0.8rem;
+    color: #f59e0b;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+/* Judul Utama dengan Aksen # */
+.sectionTitle {
+    font-family: monospace;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.titleHash {
+    color: #f59e0b;
+}
+
+/* Deskripsi Singkat Sub-judul */
+.subtitle {
+    color: #94a3b8;
+    font-size: 0.95rem;
+    max-width: 600px;
+    line-height: 1.6;
+    margin-bottom: 3rem;
+}
+
+/* Grid Featured Projects */
+.featuredGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.5rem;
+}
+
+.featuredCard {
+    background-color: #12141a;
+    border: 1px solid #212530;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.cardFileTab {
+    background-color: #171922;
+    padding: 0.6rem 1rem;
+    border-bottom: 1px solid #212530;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: monospace;
+    font-size: 0.8rem;
+    color: #94a3b8;
+}
+
+.fileIcon {
+    color: #f59e0b;
+}
+
+.cardContent {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.cardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75rem;
+}
+
+.projectTitle {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #f8fafc;
+}
+
+.badgeFeatured {
+    font-family: monospace;
+    font-size: 0.65rem;
+    color: #f59e0b;
+    border: 1px solid rgba(245, 158, 11, 0.4);
+    background-color: rgba(245, 158, 11, 0.05);
+    padding: 0.15rem 0.4rem;
+    border-radius: 4px;
+}
+
+.description {
+    color: #94a3b8;
+    font-size: 0.85rem;
+    line-height: 1.6;
+    margin-bottom: 1.25rem;
+}
+
+.pointsLabel {
+    font-family: monospace;
+    font-size: 0.65rem;
+    color: #64748b;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 0.75rem;
+}
+
+.pointsList {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.pointItem {
+    color: #94a3b8;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    position: relative;
+    padding-left: 1rem;
+}
+
+.pointItem::before {
+    content: '›';
+    position: absolute;
+    left: 0;
+    color: #f59e0b;
+    font-weight: bold;
+}
+
+.tagList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem 0;
+    margin-top: auto;
+}
+
+.tag {
+    font-family: monospace;
+    font-size: 0.7rem;
+    color: #94a3b8;
+    background-color: #171922;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #212530;
+}
+
+.cardFooter {
+    border-top: 1px solid #1e2028;
+    padding-top: 1rem;
+}
+
+.sourceLink {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #94a3b8;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-family: monospace;
+    transition: color 0.2s;
+}
+
+.sourceLink:hover {
+    color: #f8fafc;
+}
+
+/* Pembatas Seksi */
+.divider {
+    border: 0;
+    border-top: 1px solid #1e2028;
+    margin: 4rem 0;
+}
+
+/* Grid Other Projects */
+.otherGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.25rem;
+}
+
+.otherCard {
+    background-color: #12141a;
+    border: 1px solid #212530;
+    border-radius: 8px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

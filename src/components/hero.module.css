@@ -1,0 +1,235 @@
+.hero {
+    min-height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 4rem 0;
+    background-color: #0d0e12;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+/* Sisi Kiri */
+.badge {
+    display: inline-block;
+    background-color: #1a1c23;
+    color: #f59e0b;
+    font-family: monospace;
+    font-size: 0.85rem;
+    padding: 0.3rem 0.75rem;
+    border-radius: 4px;
+    margin-bottom: 1.5rem;
+    border: 1px solid #2d313e;
+}
+
+.greeting {
+    color: #94a3b8;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.name {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 0.75rem;
+    letter-spacing: -1px;
+}
+
+.role {
+    font-family: monospace;
+    color: #f59e0b;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.description {
+    color: #94a3b8;
+    line-height: 1.7;
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+    max-width: 480px;
+}
+
+.ctaGroup {
+    display: flex;
+    gap: 1rem;
+}
+
+.btnPrimary {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #f59e0b;
+    color: #0d0e12;
+    font-weight: 600;
+    padding: 0.75rem 1.25rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: opacity 0.2s;
+}
+
+.btnPrimary:hover {
+    opacity: 0.9;
+}
+
+.btnSecondary {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #2d313e;
+    font-weight: 500;
+    padding: 0.75rem 1.25rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: background-color 0.2s;
+}
+
+.btnSecondary:hover {
+    background-color: #1a1c23;
+}
+
+/* Sisi Kanan: Terminal Card */
+.terminalCard {
+    background-color: #12141a;
+    border: 1px solid #212530;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
+}
+
+.terminalHeader {
+    background-color: #181a22;
+    padding: 0.75rem 1rem;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #212530;
+}
+
+.dots {
+    display: flex;
+    gap: 6px;
+}
+
+.dotRed {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ef4444;
+}
+
+.dotYellow {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #f59e0b;
+}
+
+.dotGreen {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #10b981;
+}
+
+.terminalTitle {
+    color: #64748b;
+    font-family: monospace;
+    font-size: 0.8rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.terminalBody {
+    padding: 1.5rem;
+    font-family: monospace;
+    font-size: 0.85rem;
+    line-height: 1.8;
+}
+
+.cmdPrompt {
+    color: #f59e0b;
+    margin-right: 0.5rem;
+}
+
+.cmdKey {
+    color: #e2e8f0;
+}
+
+.cmdValue {
+    color: #94a3b8;
+    margin-left: 1.2rem;
+    margin-bottom: 0.75rem;
+}
+
+.cursor {
+    display: inline-block;
+    width: 8px;
+    height: 15px;
+    background-color: #f59e0b;
+    vertical-align: middle;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+/* Floating Social Bar */
+.socialSidebar {
+    position: fixed;
+    right: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    background-color: #12141a;
+    padding: 1rem 0.75rem;
+    border-radius: 12px;
+    border: 1px solid #212530;
+    z-index: 50;
+}
+
+.socialIcon {
+    color: #94a3b8;
+    font-size: 1.1rem;
+    transition: color 0.2s;
+}
+
+.socialIcon:hover {
+    color: #f59e0b;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .socialSidebar {
+        display: none;
+    }
+}
