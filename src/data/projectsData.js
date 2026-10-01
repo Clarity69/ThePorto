@@ -52,7 +52,7 @@ export const featuredProjects = [
       "Focuses on cloud storage and resource monitoring.",
     ],
     tech: ["Docker"],
-    github: "https://github.com/Clarity69/Porto"
+    github: "https://github.com/Clarity69/Homelab"
   }
 ];
 
