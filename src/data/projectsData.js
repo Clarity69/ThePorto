@@ -39,7 +39,7 @@ export const featuredProjects = [
       "Beta version — an earlier design pass that led to the site you're looking at now."
     ],
     tech: ["React"],
-    github: "https://github.com/Clarity69/Porto"
+    github: "https://github.com/Clarity69/Homelab"
   },
   {
     id: 4,
