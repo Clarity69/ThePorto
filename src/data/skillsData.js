@@ -11,7 +11,7 @@ export const skillsData = {
     { name: "Git & GitHub", icon: "github" },
     { name: "Figma", icon: "figma" },
     { name: "Vercel", icon: "vercel" },
-    { name: "Firebase", icon: "firebase" },
+    {name: "Supabase", icon: "supabase"},
   ],
   exploring: [
     { name: "IoT", icon: "iot" },

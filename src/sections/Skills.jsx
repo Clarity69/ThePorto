@@ -2,7 +2,7 @@ import {
   FaHtml5, FaCss3Alt, FaSquareJs, FaPython, 
   FaGithub, FaFigma, FaNodeJs, FaDatabase, FaCode, FaChartLine, FaMicrochip 
 } from 'react-icons/fa6';
-import { SiFirebase, SiFlutter } from 'react-icons/si';
+import { SiFirebase, SiFlutter, SiSupabase } from 'react-icons/si';
 import { IoLogoVercel } from 'react-icons/io5'; // Menggunakan IoLogoVercel dari io5
 import { skillsData } from '../data/skillsData';
 import styles from '../components/skills.module.css';
@@ -15,6 +15,7 @@ const getIcon = (type) => {
     case 'js': return <FaSquareJs className={styles.badgeIcon} />;
     case 'python': return <FaPython className={styles.badgeIcon} />;
     case 'github': return <FaGithub className={styles.badgeIcon} />;
+    case 'supabase':return <SiSupabase className={styles.badgeIcon}/>;
     case 'figma': return <FaFigma className={styles.badgeIcon} />;
     case 'vercel': return <IoLogoVercel className={styles.badgeIcon} />; // Pastikan di sini memanggil IoLogoVercel, BUKAN FaVercel
     case 'firebase': return <SiFirebase className={styles.badgeIcon} />;

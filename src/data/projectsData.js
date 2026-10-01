@@ -40,6 +40,19 @@ export const featuredProjects = [
     ],
     tech: ["React"],
     github: "https://github.com/Clarity69/Porto"
+  },
+  {
+    id: 4,
+    fileName: "compose.yml",
+    fileType: "yml",
+    title: "homelabbing",
+    description: "My HOMELAB documentation",
+    points: [
+      "Built with passion and a lot of patience.",
+      "Focuses on cloud storage and resource monitoring.",
+    ],
+    tech: ["Docker"],
+    github: "https://github.com/Clarity69/Porto"
   }
 ];
 
