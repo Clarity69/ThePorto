@@ -1,4 +1,5 @@
 import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa6';
+import { SiGmail } from "react-icons/si";
 import styles from '../components/hero.module.css';
 
 
@@ -97,13 +98,11 @@ export default function Hero() {
           <FaLinkedin size={20} />
         </a>
         <a 
-          href="https://instagram.com" 
-          target="_blank" 
-          rel="noreferrer" 
+          href="mailto:taroqiafghani@gmail.com?subject=Halo%20Taro%20-%20Diskusi%20Project"
           className={styles.socialIcon} 
-          title="Instagram"
+          title="Gmail"
         >
-          <FaInstagram size={20} />
+          <SiGmail size={20} />
         </a>
       </aside>
     </section>
