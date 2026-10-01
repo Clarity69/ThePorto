@@ -98,7 +98,9 @@ export default function Hero() {
           <FaLinkedin size={20} />
         </a>
         <a 
-          href="mailto:taroqiafghani@gmail.com?subject=Halo%20Taro%20-%20Diskusi%20Project"
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=taroqiafghani@gmail.com&su=Halo%20Taro%20-%20Diskusi%20Project"
+          target="_blank" 
+          rel="noreferrer" 
           className={styles.socialIcon} 
           title="Gmail"
         >
