@@ -53,7 +53,20 @@ export const featuredProjects = [
     ],
     tech: ["Docker"],
     github: "https://github.com/Clarity69/Homelab"
-  }
+  },
+ {
+    id: 5,
+    fileName: "App.jsx",
+    fileType: "jsx",
+    title: "Personal Notes App V2",
+    description: "Personal notes web application with RESTful API integration, authentication, theme toggle, and multi-language support.",
+    points: [
+      "Built with React Hooks, Context API, and custom hooks for scalable state management.",
+      "Features user authentication, page protection, dark/light mode, and ID/EN language support.",
+    ],
+    tech: ["React", "JavaScript", "REST API", "CSS"],
+    github: "https://github.com/Clarity69/personal-notes-app"
+  },
 ];
 
 export const otherProjects = [
