@@ -68,6 +68,20 @@ export const featuredProjects = [
     github: "https://github.com/Clarity69/personal-notes-app",
     demo: "https://personal-notes-app-mu.vercel.app/",
   },
+  {
+  id: 6,
+  fileName: "SimMahasiswa.blade.php",
+  fileType: "php",
+  title: "SIM-MAHASISWA",
+  description: "A Laravel-based Web-Based Student Information System for managing academic profiles, grades, and administrative data.",
+  points: [
+    "Built with Laravel MVC architecture, Eloquent ORM, and Blade Templating Engine.",
+    "Features student data management, and administrative controls.",
+  ],
+  tech: ["Laravel", "PHP", "MySQL", "Blade", "Bootstrap"],
+  github: "https://github.com/Clarity69/SIM-MAHASISWA",
+  demo: "#",
+}
 ];
 
 export const otherProjects = [
