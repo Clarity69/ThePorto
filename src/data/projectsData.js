@@ -39,7 +39,7 @@ export const featuredProjects = [
       "Beta version — an earlier design pass that led to the site you're looking at now."
     ],
     tech: ["React"],
-    github: "https://github.com/Clarity69/Homelab"
+    github: "https://github.com/Clarity69/ThePorto"
   },
   {
     id: 4,
@@ -65,7 +65,8 @@ export const featuredProjects = [
       "Features user authentication, page protection, dark/light mode, and ID/EN language support.",
     ],
     tech: ["React", "JavaScript", "REST API", "CSS"],
-    github: "https://github.com/Clarity69/personal-notes-app"
+    github: "https://github.com/Clarity69/personal-notes-app",
+    demo: "https://personal-notes-app-mu.vercel.app/",
   },
 ];
 

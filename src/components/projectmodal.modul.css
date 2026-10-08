@@ -1,0 +1,253 @@
+/* ===== Project Modal — mengikuti palet projects.module.css ===== */
+
+.modal {
+    width: min(640px, calc(100% - 2rem));
+    max-height: calc(100vh - 4rem);
+    margin: auto;
+    padding: 0;
+    background-color: #12141a;
+    border: 1px solid #212530;
+    border-radius: 10px;
+    color: #f8fafc;
+    overflow: hidden;
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.6);
+}
+
+.modal::backdrop {
+    background: rgba(5, 6, 9, 0.75);
+    backdrop-filter: blur(4px);
+}
+
+/* Animasi muncul */
+.modal[open] {
+    animation: popIn 0.22s ease-out;
+}
+
+.modal[open]::backdrop {
+    animation: fadeIn 0.22s ease-out;
+}
+
+@keyframes popIn {
+    from {
+        opacity: 0;
+        transform: translateY(12px) scale(0.98);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .modal[open],
+    .modal[open]::backdrop {
+        animation: none;
+    }
+}
+
+.inner {
+    display: flex;
+    flex-direction: column;
+    max-height: calc(100vh - 4rem);
+}
+
+/* Tab file di atas */
+.fileTab {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #171922;
+    border-bottom: 1px solid #212530;
+    padding: 0.6rem 0.75rem 0.6rem 1rem;
+    font-family: monospace;
+    font-size: 0.8rem;
+    color: #94a3b8;
+}
+
+.fileName {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.fileIcon {
+    color: #f59e0b;
+}
+
+.closeBtn {
+    display: grid;
+    place-items: center;
+    width: 28px;
+    height: 28px;
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    color: #94a3b8;
+    cursor: pointer;
+    transition: color 0.2s, border-color 0.2s, background-color 0.2s;
+}
+
+.closeBtn:hover {
+    color: #f8fafc;
+    background-color: #1e2130;
+    border-color: #2a2f3d;
+}
+
+.closeBtn:focus-visible,
+.btnGhost:focus-visible,
+.btnPrimary:focus-visible {
+    outline: 2px solid #f59e0b;
+    outline-offset: 2px;
+}
+
+/* Isi (bisa di-scroll kalau panjang) */
+.body {
+    padding: 1.5rem;
+    overflow-y: auto;
+}
+
+.image {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 1px solid #212530;
+    margin-bottom: 1.25rem;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+
+.description {
+    color: #94a3b8;
+    font-size: 0.9rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.label {
+    font-family: monospace;
+    font-size: 0.65rem;
+    color: #64748b;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 0.75rem;
+}
+
+.pointsList {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.pointItem {
+    position: relative;
+    padding-left: 1rem;
+    color: #94a3b8;
+    font-size: 0.85rem;
+    line-height: 1.6;
+}
+
+.pointItem::before {
+    content: '›';
+    position: absolute;
+    left: 0;
+    color: #f59e0b;
+    font-weight: bold;
+}
+
+.tagList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tag {
+    font-family: monospace;
+    font-size: 0.7rem;
+    color: #94a3b8;
+    background-color: #171922;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #212530;
+}
+
+/* Tombol bawah */
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    padding: 1rem 1.5rem;
+    border-top: 1px solid #1e2028;
+    background-color: #12141a;
+}
+
+.btnGhost,
+.btnPrimary {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0.9rem;
+    border-radius: 6px;
+    font-family: monospace;
+    font-size: 0.8rem;
+    text-decoration: none;
+    transition: color 0.2s, border-color 0.2s, background-color 0.2s;
+}
+
+.btnGhost {
+    color: #94a3b8;
+    border: 1px solid #212530;
+}
+
+.btnGhost:hover {
+    color: #f8fafc;
+    border-color: #3a3f4d;
+}
+
+.btnPrimary {
+    color: #0d0e12;
+    background-color: #f59e0b;
+    border: 1px solid #f59e0b;
+    font-weight: 700;
+}
+
+.btnPrimary:hover {
+    background-color: #fbbf24;
+    border-color: #fbbf24;
+}
+
+@media (max-width: 480px) {
+    .body {
+        padding: 1.25rem;
+    }
+
+    .footer {
+        padding: 1rem 1.25rem;
+    }
+
+    .title {
+        font-size: 1.3rem;
+    }
+}
