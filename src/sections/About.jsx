@@ -19,14 +19,13 @@ export default function About() {
           {/* Deskripsi Narasi */}
           <div className={styles.textContent}>
             <p>
-              Halo! Saya <span className={styles.highlight}>Taro</span>, seorang mahasiswa Informatika yang memiliki ketertarikan mendalam pada pengembangan perangkat lunak dan arsitektur web modern.
+              Hello! I'm <span className={styles.highlight}>Taro</span>, a Computer Science student with a deep interest in software development and modern web architecture.
             </p>
             <p>
-              Perjalanan saya di dunia pemrograman didorong oleh rasa ingin tahu untuk memahami bagaimana sistem bekerja di balik layar. Saya menikmati proses memecahkan masalah kompleks, membangun aplikasi yang responsif, serta mengeksplorasi teknologi baru seperti IoT dan pengolahan data.
-            </p>
-            <p>
-              Prinsip belajar saya adalah <span className={styles.highlight}>learning by doing</span>—membangun proyek nyata, melakukan eksperimen, memperbaiki kendala (debugging), dan terus meningkatkan kualitas kode secara konsisten.
-            </p>
+              My journey in programming is driven by curiosity to understand how systems work behind the scenes. I enjoy solving complex problems, building responsive applications, and exploring new technologies such as IoT and data processing.</p>
+              <p>
+                My learning philosophy is <span className={styles.highlight}>learning by doing</span>—building real-world projects, experimenting, debugging, and consistently improving code quality.
+                </p>
           </div>
 
           {/* Kartu Ringkasan Informasi */}

@@ -81,6 +81,20 @@ export const featuredProjects = [
   tech: ["Laravel", "PHP", "MySQL", "Blade", "Bootstrap"],
   github: "https://github.com/Clarity69/SIM-MAHASISWA",
   demo: "#",
+},
+{
+  id: 77,
+  fileName: "shell.qml",
+  fileType: "qml",
+  title: "MY-SHELL",
+  description: "A minimal Hyprland desktop shell built with Quickshell: an app-style Control Center plus a status bar that replaces Waybar, themed live from pywal.",
+  points: [
+    "Control Center with 10 pages for network, Bluetooth, audio, display, wallpaper, clipboard history, power and keybinds, driven by nmcli, wpctl, bluetoothctl and other CLI tools.",
+    "Status bar with 7 switchable layouts, live swaync notification count, a calendar popup and IPC control from Hyprland keybinds.",
+  ],
+  tech: ["Quickshell", "QML", "Hyprland", "Shell Script", "pywal"],
+  github: "https://github.com/Clarity69/My-Shell",
+  demo: "#",
 }
 ];
 
