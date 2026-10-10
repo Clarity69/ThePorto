@@ -1,101 +1,96 @@
 export const featuredProjects = [
   {
     id: 1,
-    fileName: "form.js",
-    fileType: "js",
-    title: "website-form-mhs",
-    description: "A student form application built to practice dynamic input handling and client-side interaction.",
+    fileName: "shell.qml",
+    fileType: "qml",
+    title: "MY-SHELL",
+    description: "A minimal Hyprland desktop shell built with Quickshell: featuring an app-style Control Center and a dynamic status bar replacing Waybar, with live pywal color integration.",
     points: [
-      "Built with vanilla JavaScript, HTML and CSS — no frameworks.",
-      "Handles form-driven pages and responds to user input entirely on the client side.",
-      "Grew out of a Web Programming coursework assignment (Tugas Pemrograman Web)."
+      "Built a feature-rich Control Center with 10 dedicated pages (network, audio, Bluetooth, display, wallpapers, clipboard, and keybinds) interfacing with system CLI tools (nmcli, wpctl, bluetoothctl).",
+      "Designed a responsive status bar supporting 7 switchable layouts, swaync notification integration, calendar popup, and real-time IPC control via Hyprland keybinds."
     ],
-    tech: ["JavaScript", "HTML", "CSS"],
-    github: "https://github.com/Clarity69/website-form-mhs"
+    tech: ["Quickshell", "QML", "Hyprland", "Shell Script", "pywal"],
+    github: "https://github.com/Clarity69/My-Shell"
   },
   {
     id: 2,
-    fileName: "main.py",
-    fileType: "py",
-    title: "Vibe-code",
-    description: "A Python project exploring how AI assistance can speed up the coding process itself.",
+    fileName: "App.jsx",
+    fileType: "jsx",
+    title: "Personal Notes App V2",
+    description: "Full-featured personal notes web application integrated with a RESTful API, supporting user authentication, responsive theme switching, and multi-language capabilities.",
     points: [
-      "Built with Python.",
-      "Experiments with an AI-assisted (\"vibe coding\") workflow rather than a traditional app feature set.",
-      "Written to learn how far AI tooling can go when guided by a human developer."
+      "Architected using React Hooks, Context API, and custom hooks for scalable global state management.",
+      "Implemented robust user authentication, protected routes, dynamic dark/light mode, and seamless ID/EN localization."
     ],
-    tech: ["Python"],
-    github: "https://github.com/Clarity69/Vibe-code"
+    tech: ["React", "JavaScript", "REST API", "CSS"],
+    github: "https://github.com/Clarity69/personal-notes-app",
+    demo: "https://personal-notes-app-mu.vercel.app/"
   },
   {
     id: 3,
-    fileName: "react.jsx",
-    fileType: "html",
-    title: "Porto",
-    description: "An earlier version of this developer portfolio, built to practice structuring a personal site from scratch.",
+    fileName: "SimMahasiswa.blade.php",
+    fileType: "php",
+    title: "SIM-MAHASISWA",
+    description: "A web-based Student Information System built with Laravel to streamline academic profile management, grade recording, and administrative workflows.",
     points: [
-      "Built with plain HTML and CSS — no frameworks.",
-      "Focuses on page layout, spacing and basic responsive structure.",
-      "Beta version — an earlier design pass that led to the site you're looking at now."
+      "Developed following Laravel MVC pattern, utilizing Eloquent ORM for database relations and Blade Templating for modular UI components.",
+      "Features fine-grained administrative access control, student data operations, and structured record management."
     ],
-    tech: ["React"],
-    github: "https://github.com/Clarity69/ThePorto"
+    tech: ["Laravel", "PHP", "MySQL", "Blade", "Bootstrap"],
+    github: "https://github.com/Clarity69/SIM-MAHASISWA"
   },
   {
     id: 4,
     fileName: "compose.yml",
     fileType: "yml",
     title: "homelabbing",
-    description: "My HOMELAB documentation",
+    description: "Personal homelab infrastructure configuration focusing on self-hosted cloud services, containerized deployment, and system resource monitoring.",
     points: [
-      "Built with passion and a lot of patience.",
-      "Focuses on cloud storage and resource monitoring.",
+      "Configured and managed containerized services using Docker Compose for cloud storage and server telemetry.",
+      "Documented deployment procedures, network isolation, and maintenance workflows for reproducible local infrastructure."
     ],
-    tech: ["Docker"],
+    tech: ["Docker", "Linux", "YAML"],
     github: "https://github.com/Clarity69/Homelab"
   },
- {
+  {
     id: 5,
-    fileName: "App.jsx",
-    fileType: "jsx",
-    title: "Personal Notes App V2",
-    description: "Personal notes web application with RESTful API integration, authentication, theme toggle, and multi-language support.",
+    fileName: "main.py",
+    fileType: "py",
+    title: "Vibe-code",
+    description: "An experimental Python repository evaluating AI-assisted development workflows and rapid prototyping patterns.",
     points: [
-      "Built with React Hooks, Context API, and custom hooks for scalable state management.",
-      "Features user authentication, page protection, dark/light mode, and ID/EN language support.",
+      "Explores prompt-guided code generation and developer-AI collaborative loops to accelerate software prototyping.",
+      "Serves as a sandbox for testing code generation limits, automated refactoring, and AI tooling capabilities in Python."
     ],
-    tech: ["React", "JavaScript", "REST API", "CSS"],
-    github: "https://github.com/Clarity69/personal-notes-app",
-    demo: "https://personal-notes-app-mu.vercel.app/",
+    tech: ["Python"],
+    github: "https://github.com/Clarity69/Vibe-code"
   },
   {
-  id: 6,
-  fileName: "SimMahasiswa.blade.php",
-  fileType: "php",
-  title: "SIM-MAHASISWA",
-  description: "A Laravel-based Web-Based Student Information System for managing academic profiles, grades, and administrative data.",
-  points: [
-    "Built with Laravel MVC architecture, Eloquent ORM, and Blade Templating Engine.",
-    "Features student data management, and administrative controls.",
-  ],
-  tech: ["Laravel", "PHP", "MySQL", "Blade", "Bootstrap"],
-  github: "https://github.com/Clarity69/SIM-MAHASISWA",
-  demo: "#",
-},
-{
-  id: 77,
-  fileName: "shell.qml",
-  fileType: "qml",
-  title: "MY-SHELL",
-  description: "A minimal Hyprland desktop shell built with Quickshell: an app-style Control Center plus a status bar that replaces Waybar, themed live from pywal.",
-  points: [
-    "Control Center with 10 pages for network, Bluetooth, audio, display, wallpaper, clipboard history, power and keybinds, driven by nmcli, wpctl, bluetoothctl and other CLI tools.",
-    "Status bar with 7 switchable layouts, live swaync notification count, a calendar popup and IPC control from Hyprland keybinds.",
-  ],
-  tech: ["Quickshell", "QML", "Hyprland", "Shell Script", "pywal"],
-  github: "https://github.com/Clarity69/My-Shell",
-  demo: "#",
-}
+    id: 6,
+    fileName: "form.js",
+    fileType: "js",
+    title: "website-form-mhs",
+    description: "A lightweight dynamic form processing engine built strictly using native browser Web APIs.",
+    points: [
+      "Implemented client-side dynamic input handling and DOM updates entirely in vanilla JavaScript without framework overhead.",
+      "Zero-dependency structure focused on reliable client-side validation and event handling."
+    ],
+    tech: ["JavaScript", "HTML5", "CSS3"],
+    github: "https://github.com/Clarity69/website-form-mhs"
+  },
+  {
+    id: 7,
+    fileName: "index.html",
+    fileType: "html",
+    title: "Porto (Legacy)",
+    description: "An earlier iteration of personal developer portfolio designed to master core layout structures and responsive web design.",
+    points: [
+      "Constructed with semantic HTML5 and vanilla CSS, establishing core layout rules without external frameworks.",
+      "Provided the structural layout blueprint and design foundation for the current portfolio iteration."
+    ],
+    tech: ["HTML5", "CSS3"],
+    github: "https://github.com/Clarity69/ThePorto"
+  }
 ];
 
 export const otherProjects = [
