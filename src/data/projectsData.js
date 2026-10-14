@@ -4,6 +4,7 @@ export const featuredProjects = [
     fileName: "shell.qml",
     fileType: "qml",
     title: "MY-SHELL",
+    image: "/projects/dashboard.png",
     description: "A minimal Hyprland desktop shell built with Quickshell: featuring an app-style Control Center and a dynamic status bar replacing Waybar, with live pywal color integration.",
     points: [
       "Built a feature-rich Control Center with 10 dedicated pages (network, audio, Bluetooth, display, wallpapers, clipboard, and keybinds) interfacing with system CLI tools (nmcli, wpctl, bluetoothctl).",
@@ -17,6 +18,7 @@ export const featuredProjects = [
     fileName: "App.jsx",
     fileType: "jsx",
     title: "Personal Notes App V2",
+    image: "/projects/home.png",
     description: "Full-featured personal notes web application integrated with a RESTful API, supporting user authentication, responsive theme switching, and multi-language capabilities.",
     points: [
       "Architected using React Hooks, Context API, and custom hooks for scalable global state management.",
@@ -31,6 +33,7 @@ export const featuredProjects = [
     fileName: "SimMahasiswa.blade.php",
     fileType: "php",
     title: "SIM-MAHASISWA",
+    image: "/projects/dashboard-1.png",
     description: "A web-based Student Information System built with Laravel to streamline academic profile management, grade recording, and administrative workflows.",
     points: [
       "Developed following Laravel MVC pattern, utilizing Eloquent ORM for database relations and Blade Templating for modular UI components.",
@@ -44,6 +47,7 @@ export const featuredProjects = [
     fileName: "compose.yml",
     fileType: "yml",
     title: "homelabbing",
+    image: "/projects/homelab-architecture.svg",
     description: "Personal homelab infrastructure configuration focusing on self-hosted cloud services, containerized deployment, and system resource monitoring.",
     points: [
       "Configured and managed containerized services using Docker Compose for cloud storage and server telemetry.",
@@ -57,6 +61,7 @@ export const featuredProjects = [
     fileName: "main.py",
     fileType: "py",
     title: "Vibe-code",
+    image: "/projects/vibes.png",
     description: "An experimental Python repository evaluating AI-assisted development workflows and rapid prototyping patterns.",
     points: [
       "Explores prompt-guided code generation and developer-AI collaborative loops to accelerate software prototyping.",
@@ -70,6 +75,7 @@ export const featuredProjects = [
     fileName: "form.js",
     fileType: "js",
     title: "website-form-mhs",
+    image: "/projects/preview.jpeg",
     description: "A lightweight dynamic form processing engine built strictly using native browser Web APIs.",
     points: [
       "Implemented client-side dynamic input handling and DOM updates entirely in vanilla JavaScript without framework overhead.",
@@ -80,15 +86,16 @@ export const featuredProjects = [
   },
   {
     id: 7,
-    fileName: "index.html",
+    fileName: "react.jsx",
     fileType: "html",
     title: "Porto (Legacy)",
+     image: "/projects/porto.png",
     description: "An earlier iteration of personal developer portfolio designed to master core layout structures and responsive web design.",
     points: [
       "Constructed with semantic HTML5 and vanilla CSS, establishing core layout rules without external frameworks.",
       "Provided the structural layout blueprint and design foundation for the current portfolio iteration."
     ],
-    tech: ["HTML5", "CSS3"],
+    tech: ["React"],
     github: "https://github.com/Clarity69/ThePorto"
   }
 ];
@@ -104,6 +111,7 @@ export const otherProjects = [
   {
     id: 2,
     title: "dotfiles",
+     image: "/projects/dots.png",
     description: "Personal Linux dotfiles and rice configuration — window manager, terminal and desktop styling setup.",
     tech: ["CSS", "Shell"],
     github: "https://github.com/Clarity69/dotfiles"
@@ -111,6 +119,7 @@ export const otherProjects = [
   {
     id: 3,
     title: "wofi-config",
+     image: "/projects/wofi.png",
     description: "A personal Wofi application-launcher configuration, built for a customized GNOME desktop.",
     tech: ["CSS"],
     github: "https://github.com/Clarity69/wofi-config"

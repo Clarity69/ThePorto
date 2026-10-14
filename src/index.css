@@ -1,20 +1,82 @@
-/* Styling Global - Berlaku untuk seluruh halaman */
-:root {
-    --primary-color: #2563eb;
-    --bg-color: #f8fafc;
-    --text-color: #0f172a;
-    --font-family: 'Inter', system-ui, -apple-system, sans-serif;
+/* Design tokens: warna berganti otomatis lewat <html data-theme="..."> */
+:root,
+:root[data-theme='dark'] {
+    --bg: #0d0e12;
+    --surface: #12141a;
+    --surface-2: #171922;
+    --surface-hover: #1a1c23;
+    --border-subtle: #1e2028;
+    --border: #212530;
+    --border-strong: #2d313e;
+    --text-strong: #f8fafc;
+    --text: #e2e8f0;
+    --text-muted: #94a3b8;
+    --text-faint: #64748b;
+    --accent: #f59e0b;
+    --accent-hover: #fbbf24;
+    --accent-border: rgba(245, 158, 11, 0.4);
+    --accent-soft: rgba(245, 158, 11, 0.06);
+    --on-accent: #0d0e12;
+    --shadow-color: rgba(0, 0, 0, 0.5);
+    --backdrop: rgba(5, 6, 9, 0.75);
+    --header-bg: rgba(13, 14, 18, 0.85);
+    color-scheme: dark;
 }
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+:root[data-theme='light'] {
+    --bg: #f8fafc;
+    --surface: #ffffff;
+    --surface-2: #f1f5f9;
+    --surface-hover: #e9eef5;
+    --border-subtle: #e2e8f0;
+    --border: #dfe5ee;
+    --border-strong: #cbd5e1;
+    --text-strong: #0f172a;
+    --text: #1e293b;
+    --text-muted: #475569;
+    --text-faint: #64748b;
+    --accent: #2563eb;
+    --accent-hover: #1d4ed8;
+    --accent-border: rgba(37, 99, 235, 0.35);
+    --accent-soft: rgba(37, 99, 235, 0.06);
+    --on-accent: #ffffff;
+    --shadow-color: rgba(15, 23, 42, 0.12);
+    --backdrop: rgba(15, 23, 42, 0.45);
+    --header-bg: rgba(248, 250, 252, 0.85);
+    color-scheme: light;
+}
+
+:root {
+    --font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    --gutter: 2rem;
+    --nav-height: 72px;
+}
+
+@media (max-width: 640px) {
+    :root { --gutter: 1rem; --nav-height: 64px; }
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: var(--nav-height);
 }
 
 body {
     font-family: var(--font-family);
-    background-color: var(--bg-color);
-    color: var(--text-color);
+    background-color: var(--bg);
+    color: var(--text);
     line-height: 1.6;
+    overflow-x: hidden;
+}
+
+img { max-width: 100%; display: block; }
+
+body, header, section, aside, dialog, a, button, li, div {
+    transition: background-color .25s ease, border-color .25s ease, color .25s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { transition: none !important; animation: none !important; }
 }

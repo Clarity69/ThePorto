@@ -2,7 +2,7 @@ import {
   FaHtml5, FaCss3Alt, FaSquareJs, FaPython, 
   FaGithub, FaFigma, FaNodeJs, FaDatabase, FaCode, FaChartLine, FaMicrochip 
 } from 'react-icons/fa6';
-import { SiFirebase, SiFlutter, SiSupabase } from 'react-icons/si';
+import { SiFirebase, SiFlutter, SiSupabase, SiQt } from 'react-icons/si';
 import { IoLogoVercel } from 'react-icons/io5'; // Menggunakan IoLogoVercel dari io5
 import { skillsData } from '../data/skillsData';
 import styles from '../components/skills.module.css';
@@ -23,6 +23,7 @@ const getIcon = (type) => {
     case 'data': return <FaChartLine className={styles.badgeIcon} />;
     case 'node': return <FaNodeJs className={styles.badgeIcon} />;
     case 'flutter': return <SiFlutter className={styles.badgeIcon} />;
+    case 'qt': return <SiQt className={styles.badgeIcon} />;   // ← baru
     case 'db': return <FaDatabase className={styles.badgeIcon} />;
     default: return <FaCode className={styles.badgeIcon} />;
   }

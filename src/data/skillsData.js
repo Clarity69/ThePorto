@@ -22,5 +22,6 @@ export const skillsData = {
     { name: "Flutter", icon: "flutter" },
     { name: "SQL Databases", icon: "db" },
     { name: "Java / C / C++ / C#", icon: "code" },
+    { name: "QML", icon: "qt" },
   ],
 };

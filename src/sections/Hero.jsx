@@ -89,7 +89,7 @@ export default function Hero() {
           <FaGithub size={20} />
         </a>
         <a 
-          href="https://linkedin.com" 
+          href="https://www.linkedin.com/in/ahmad-taroqi-410187411/" 
           target="_blank" 
           rel="noreferrer" 
           className={styles.socialIcon} 

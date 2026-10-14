@@ -9,7 +9,7 @@ import { Analytics } from '@vercel/analytics/react';
 
 export default function App() {
   return (
-    <div style={{ backgroundColor: '#0d0e12', minHeight: '100vh', color: '#ffffff' }}>
+    <div style={{ backgroundColor: 'var(--bg)', minHeight: '100vh', color: 'var(--text)' }}>
       <Navbar />
       <main>
         <Hero />

@@ -1,7 +1,7 @@
 .skills {
     padding: 5rem 0;
-    background-color: #0d0e12;
-    border-top: 1px solid #1e2028;
+    background-color: var(--on-accent);
+    border-top: 1px solid var(--border-subtle);
 }
 
 .container {
@@ -13,7 +13,7 @@
 .categorySub {
     font-family: monospace;
     font-size: 0.75rem;
-    color: #f59e0b;
+    color: var(--accent);
     letter-spacing: 1px;
     text-transform: uppercase;
     margin-bottom: 0.25rem;
@@ -22,7 +22,7 @@
 .sectionTitle {
     font-family: monospace;
     font-size: 1.75rem;
-    color: #ffffff;
+    color: var(--text-strong);
     margin-bottom: 0.5rem;
     display: flex;
     align-items: center;
@@ -30,11 +30,11 @@
 }
 
 .titleHash {
-    color: #f59e0b;
+    color: var(--accent);
 }
 
 .subtitle {
-    color: #94a3b8;
+    color: var(--text-muted);
     font-size: 0.95rem;
     max-width: 600px;
     line-height: 1.6;
@@ -49,7 +49,7 @@
 }
 
 .columnHeader {
-    border-top: 1px solid #1e2028;
+    border-top: 1px solid var(--border-subtle);
     padding-top: 1.25rem;
     margin-bottom: 1.25rem;
 }
@@ -57,14 +57,14 @@
 .columnTitle {
     font-size: 1.05rem;
     font-weight: 700;
-    color: #f8fafc;
+    color: var(--text-strong);
     margin-bottom: 0.25rem;
 }
 
 .columnSub {
     font-family: monospace;
     font-size: 0.75rem;
-    color: #f59e0b;
+    color: var(--accent);
 }
 
 /* Group Badge/Pill */
@@ -78,22 +78,22 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    background-color: #12141a;
-    border: 1px solid #212530;
+    background-color: var(--surface);
+    border: 1px solid var(--border);
     padding: 0.5rem 0.85rem;
     border-radius: 6px;
     font-size: 0.85rem;
-    color: #e2e8f0;
+    color: var(--text);
     transition: border-color 0.2s ease, transform 0.2s ease;
 }
 
 .skillBadge:hover {
-    border-color: #f59e0b;
+    border-color: var(--accent);
     transform: translateY(-2px);
 }
 
 .badgeIcon {
-    color: #f59e0b;
+    color: var(--accent);
     font-size: 0.9rem;
 }
 
