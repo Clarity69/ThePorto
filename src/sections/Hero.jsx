@@ -1,7 +1,6 @@
-import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa6';
-import { SiGmail } from "react-icons/si";
+import { FaGithub, FaLinkedin } from 'react-icons/fa6';
+import { SiGmail } from 'react-icons/si';
 import styles from '../components/hero.module.css';
-
 
 export default function Hero() {
   return (
@@ -18,25 +17,25 @@ export default function Hero() {
           </p>
 
           <div className={styles.ctaGroup}>
-            <a 
-            href="https://github.com/Clarity69" 
-            target="_blank" 
-            rel="noreferrer" 
-            className={styles.btnPrimary}
+            <a
+              href="https://github.com/Clarity69"
+              target="_blank"
+              rel="noreferrer"
+              className={styles.btnPrimary}
             >
-          <FaGithub size={18} />
-            View GitHub
-          </a>
+              <FaGithub size={18} />
+              View GitHub
+            </a>
             <a href="#projects" className={styles.btnSecondary}>
               See Projects
             </a>
           </div>
         </div>
 
-        {/* Kolom Kanan - Terminal Card */}
+        {/* Kolom Kanan - Terminal Card (dekoratif) */}
         <div className={styles.terminalCard}>
           <div className={styles.terminalHeader}>
-            <div className={styles.dots}>
+            <div className={styles.dots} aria-hidden="true">
               <span className={styles.dotRed}></span>
               <span className={styles.dotYellow}></span>
               <span className={styles.dotGreen}></span>
@@ -69,7 +68,7 @@ export default function Hero() {
             </div>
             <div className={styles.cmdValue}>IoT · Data Mining</div>
 
-            <div>
+            <div aria-hidden="true">
               <span className={styles.cmdPrompt}>$</span>
               <span className={styles.cursor}></span>
             </div>
@@ -77,32 +76,35 @@ export default function Hero() {
         </div>
       </div>
 
-    {/* Floating Social Bar */}
-      <aside className={styles.socialSidebar}>
-        <a 
-          href="https://github.com/Clarity69" 
-          target="_blank" 
-          rel="noreferrer" 
-          className={styles.socialIcon} 
+      {/* Floating Social Bar — link berisi ikon saja, jadi wajib punya aria-label */}
+      <aside className={styles.socialSidebar} aria-label="Social links">
+        <a
+          href="https://github.com/Clarity69"
+          target="_blank"
+          rel="noreferrer"
+          className={styles.socialIcon}
           title="GitHub"
+          aria-label="GitHub (opens in a new tab)"
         >
           <FaGithub size={20} />
         </a>
-        <a 
-          href="https://www.linkedin.com/in/ahmad-taroqi-410187411/" 
-          target="_blank" 
-          rel="noreferrer" 
-          className={styles.socialIcon} 
+        <a
+          href="https://www.linkedin.com/in/ahmad-taroqi-410187411/"
+          target="_blank"
+          rel="noreferrer"
+          className={styles.socialIcon}
           title="LinkedIn"
+          aria-label="LinkedIn (opens in a new tab)"
         >
           <FaLinkedin size={20} />
         </a>
-        <a 
+        <a
           href="https://mail.google.com/mail/?view=cm&fs=1&to=taroqiafghani@gmail.com&su=Halo%20Taro%20-%20Diskusi%20Project"
-          target="_blank" 
-          rel="noreferrer" 
-          className={styles.socialIcon} 
+          target="_blank"
+          rel="noreferrer"
+          className={styles.socialIcon}
           title="Gmail"
+          aria-label="Send an email via Gmail (opens in a new tab)"
         >
           <SiGmail size={20} />
         </a>
