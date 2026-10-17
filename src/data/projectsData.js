@@ -4,7 +4,7 @@ export const featuredProjects = [
     fileName: "shell.qml",
     fileType: "qml",
     title: "MY-SHELL",
-    image: "/projects/dashboard.png",
+    image: "/projects/dashboard.webp",
     description: "A minimal Hyprland desktop shell built with Quickshell: featuring an app-style Control Center and a dynamic status bar replacing Waybar, with live pywal color integration.",
     points: [
       "Built a feature-rich Control Center with 10 dedicated pages (network, audio, Bluetooth, display, wallpapers, clipboard, and keybinds) interfacing with system CLI tools (nmcli, wpctl, bluetoothctl).",
@@ -18,7 +18,7 @@ export const featuredProjects = [
     fileName: "App.jsx",
     fileType: "jsx",
     title: "Personal Notes App V2",
-    image: "/projects/home.png",
+    image: "/projects/home.webp",
     description: "Full-featured personal notes web application integrated with a RESTful API, supporting user authentication, responsive theme switching, and multi-language capabilities.",
     points: [
       "Architected using React Hooks, Context API, and custom hooks for scalable global state management.",
@@ -33,7 +33,7 @@ export const featuredProjects = [
     fileName: "SimMahasiswa.blade.php",
     fileType: "php",
     title: "SIM-MAHASISWA",
-    image: "/projects/dashboard-1.png",
+    image: "/projects/dashboard-1.webp",
     description: "A web-based Student Information System built with Laravel to streamline academic profile management, grade recording, and administrative workflows.",
     points: [
       "Developed following Laravel MVC pattern, utilizing Eloquent ORM for database relations and Blade Templating for modular UI components.",
@@ -61,7 +61,7 @@ export const featuredProjects = [
     fileName: "main.py",
     fileType: "py",
     title: "Vibe-code",
-    image: "/projects/vibes.png",
+    image: "/projects/vibes.webp",
     description: "An experimental Python repository evaluating AI-assisted development workflows and rapid prototyping patterns.",
     points: [
       "Explores prompt-guided code generation and developer-AI collaborative loops to accelerate software prototyping.",
@@ -75,7 +75,7 @@ export const featuredProjects = [
     fileName: "form.js",
     fileType: "js",
     title: "website-form-mhs",
-    image: "/projects/preview.jpeg",
+    image: "/projects/preview.webp",
     description: "A lightweight dynamic form processing engine built strictly using native browser Web APIs.",
     points: [
       "Implemented client-side dynamic input handling and DOM updates entirely in vanilla JavaScript without framework overhead.",
@@ -89,7 +89,7 @@ export const featuredProjects = [
     fileName: "react.jsx",
     fileType: "html",
     title: "Porto (Legacy)",
-     image: "/projects/porto.png",
+     image: "/projects/porto.webp",
     description: "An earlier iteration of personal developer portfolio designed to master core layout structures and responsive web design.",
     points: [
       "Constructed with semantic HTML5 and vanilla CSS, establishing core layout rules without external frameworks.",
@@ -111,7 +111,7 @@ export const otherProjects = [
   {
     id: 2,
     title: "dotfiles",
-     image: "/projects/dots.png",
+     image: "/projects/dots.webp",
     description: "Personal Linux dotfiles and rice configuration — window manager, terminal and desktop styling setup.",
     tech: ["CSS", "Shell"],
     github: "https://github.com/Clarity69/dotfiles"
@@ -119,7 +119,7 @@ export const otherProjects = [
   {
     id: 3,
     title: "wofi-config",
-     image: "/projects/wofi.png",
+     image: "/projects/wofi.webp",
     description: "A personal Wofi application-launcher configuration, built for a customized GNOME desktop.",
     tech: ["CSS"],
     github: "https://github.com/Clarity69/wofi-config"
@@ -130,15 +130,15 @@ export const otherProjects = [
    // Repo yang tidak ditampilkan di "More"
 export const hiddenRepos = ['porto', 'python', 'kc','web'];
 export const previewImages = {
-  'dotfiles': '/projects/dots.png',
-  'wofi-config': '/projects/wofi.png',
-  'pemweb': '/projects/pemweb.png',
-  'porto': '/projects/porto.png',
-  'kasir': '/projects/kasir.png',
-  'pemesanan-makanan': '/projects/pemesanan-makanan.png',
-  // 'web': '/projects/web.png',
-  'praktikum': '/projects/praktikum.png',
-  'bug_hunt': '/projects/bug-hunt-preview.png',
-  'kc': '/projects/kc.png',
-  'python': '/projects/python.png',
+  'dotfiles': '/projects/dots.webp',
+  'wofi-config': '/projects/wofi.webp',
+  'pemweb': '/projects/pemweb.webp',
+  'porto': '/projects/porto.webp',
+  'kasir': '/projects/kasir.webp',
+  'pemesanan-makanan': '/projects/pemesanan-makanan.webp',
+  // 'web': '/projects/web.webp',
+  'praktikum': '/projects/praktikum.webp',
+  'bug_hunt': '/projects/bug-hunt-preview.webp',
+  'kc': '/projects/kc.webp',
+  'python': '/projects/python.webp',
 };

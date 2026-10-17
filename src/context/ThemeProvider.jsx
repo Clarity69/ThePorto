@@ -15,12 +15,20 @@ function getInitialTheme() {
   return readSavedTheme() ?? (prefersLight ? 'light' : 'dark');
 }
 
+const prefersReducedMotion = () =>
+  window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+// Pasang tema langsung ke <html> (dipakai juga di dalam view transition)
+function applyThemeToDom(theme) {
+  document.documentElement.dataset.theme = theme;
+}
+
 export default function ThemeProvider({ children }) {
   const [theme, setThemeState] = useState(getInitialTheme);
 
-  // theme berubah -> <html data-theme="..."> -> CSS variables ikut berganti
+  // Jaga <html data-theme> selalu sinkron dengan state
   useEffect(() => {
-    document.documentElement.dataset.theme = theme;
+    applyThemeToDom(theme);
   }, [theme]);
 
   // Selama user belum memilih manual, ikuti setting OS
@@ -33,19 +41,78 @@ export default function ThemeProvider({ children }) {
     return () => media.removeEventListener('change', onChange);
   }, []);
 
-  // Pilihan manual disimpan supaya bertahan setelah reload
-  const setTheme = useCallback((next) => {
-    setThemeState(next);
+  /**
+   * Ganti tema dengan animasi.
+   * origin = { x, y } titik awal lingkaran (biasanya posisi tombol tema).
+   */
+  const setTheme = useCallback((next, origin) => {
     try {
       localStorage.setItem(THEME_STORAGE_KEY, next);
     } catch {
       /* abaikan */
     }
+
+    const swap = () => {
+      applyThemeToDom(next);
+      setThemeState(next);
+    };
+
+    // 1) Pengguna mematikan animasi → ganti langsung
+    if (prefersReducedMotion()) {
+      swap();
+      return;
+    }
+
+    // 2) Browser lama (tanpa View Transitions) → fade warna singkat
+    if (!document.startViewTransition) {
+      const root = document.documentElement;
+      root.classList.add('theme-switching');
+      swap();
+      window.setTimeout(() => root.classList.remove('theme-switching'), 300);
+      return;
+    }
+
+    // 3) Browser modern → lingkaran melebar dari tombol tema
+    const x = origin?.x ?? window.innerWidth - 40;
+    const y = origin?.y ?? 40;
+    // Jari-jari sampai sudut layar terjauh, supaya lingkaran menutup seluruh layar
+    const radius = Math.hypot(
+      Math.max(x, window.innerWidth - x),
+      Math.max(y, window.innerHeight - y)
+    );
+
+    const transition = document.startViewTransition(swap);
+
+    transition.ready.then(() => {
+      document.documentElement.animate(
+        {
+          clipPath: [
+            `circle(0px at ${x}px ${y}px)`,
+            `circle(${radius}px at ${x}px ${y}px)`,
+          ],
+        },
+        {
+          duration: 500,
+          easing: 'cubic-bezier(0.4, 0, 0.2, 1)',
+          pseudoElement: '::view-transition-new(root)',
+        }
+      );
+    });
   }, []);
 
-  const toggleTheme = useCallback(() => {
-    setTheme(theme === 'dark' ? 'light' : 'dark');
-  }, [theme, setTheme]);
+  // Dipanggil dari tombol: ambil posisi tengah tombol sebagai titik awal
+  const toggleTheme = useCallback(
+    (event) => {
+      let origin;
+      const el = event?.currentTarget;
+      if (el?.getBoundingClientRect) {
+        const rect = el.getBoundingClientRect();
+        origin = { x: rect.left + rect.width / 2, y: rect.top + rect.height / 2 };
+      }
+      setTheme(theme === 'dark' ? 'light' : 'dark', origin);
+    },
+    [theme, setTheme]
+  );
 
   const value = useMemo(
     () => ({ theme, setTheme, toggleTheme }),
