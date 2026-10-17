@@ -125,3 +125,20 @@ export const otherProjects = [
     github: "https://github.com/Clarity69/wofi-config"
   }
 ];
+
+
+   // Repo yang tidak ditampilkan di "More"
+export const hiddenRepos = ['porto', 'python', 'kc','web'];
+export const previewImages = {
+  'dotfiles': '/projects/dots.png',
+  'wofi-config': '/projects/wofi.png',
+  'pemweb': '/projects/pemweb.png',
+  'porto': '/projects/porto.png',
+  'kasir': '/projects/kasir.png',
+  'pemesanan-makanan': '/projects/pemesanan-makanan.png',
+  // 'web': '/projects/web.png',
+  'praktikum': '/projects/praktikum.png',
+  'bug_hunt': '/projects/bug-hunt-preview.png',
+  'kc': '/projects/kc.png',
+  'python': '/projects/python.png',
+};

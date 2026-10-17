@@ -35,10 +35,10 @@
     --text: #1e293b;
     --text-muted: #475569;
     --text-faint: #64748b;
-    --accent: #2563eb;
-    --accent-hover: #1d4ed8;
-    --accent-border: rgba(37, 99, 235, 0.35);
-    --accent-soft: rgba(37, 99, 235, 0.06);
+    --accent: #047857;
+    --accent-hover: #065f46;
+    --accent-border: rgba(4, 120, 87, 0.35);
+    --accent-soft: rgba(4, 120, 87, 0.06);
     --on-accent: #ffffff;
     --shadow-color: rgba(15, 23, 42, 0.12);
     --backdrop: rgba(15, 23, 42, 0.45);

@@ -211,3 +211,63 @@
     flex-direction: column;
     justify-content: space-between;
 }
+/* ===== Data live dari GitHub API ===== */
+.cardFooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: .6rem 1rem;
+}
+
+.repoStats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .35rem .9rem;
+    font-family: monospace;
+    font-size: .72rem;
+    color: var(--text-faint);
+}
+
+.repoStats span {
+    display: inline-flex;
+    align-items: center;
+    gap: .3rem;
+}
+
+.langDot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--accent);
+}
+
+.liveBadge {
+    margin-left: .6rem;
+    font-size: .7rem;
+    color: #10b981;
+    letter-spacing: .5px;
+    text-transform: none;
+}
+
+.apiNote {
+    font-family: monospace;
+    font-size: .8rem;
+    color: var(--text-faint);
+    margin: -1.5rem 0 1.5rem;
+}
+
+/* Kartu kerangka (skeleton) selama loading */
+.skeleton {
+    height: 180px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    background: linear-gradient(90deg, var(--surface) 25%, var(--surface-2) 50%, var(--surface) 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.4s linear infinite;
+}
+
+@keyframes shimmer {
+    from { background-position: 200% 0; }
+    to   { background-position: -200% 0; }
+}
