@@ -1,48 +1,48 @@
 /* Design tokens: warna berganti otomatis lewat <html data-theme="..."> */
 :root,
 :root[data-theme='dark'] {
-    --bg: #0d0e12;
-    --surface: #12141a;
-    --surface-2: #171922;
-    --surface-hover: #1a1c23;
-    --border-subtle: #1e2028;
-    --border: #212530;
-    --border-strong: #2d313e;
-    --text-strong: #f8fafc;
-    --text: #e2e8f0;
-    --text-muted: #94a3b8;
-    --text-faint: #7c8798;
-    --accent: #f59e0b;
-    --accent-hover: #fbbf24;
-    --accent-border: rgba(245, 158, 11, 0.4);
-    --accent-soft: rgba(245, 158, 11, 0.06);
-    --on-accent: #0d0e12;
+    --bg: #1d2021;
+    --surface: #282828;
+    --surface-2: #32302f;
+    --surface-hover: #3c3836;
+    --border-subtle: #32302f;
+    --border: #3c3836;
+    --border-strong: #504945;
+    --text-strong: #fbf1c7;
+    --text: #ebdbb2;
+    --text-muted: #bdae93;
+    --text-faint: #a89984;
+    --accent: #fabd2f;
+    --accent-hover: #fe8019;
+    --accent-border: rgba(250, 189, 47, 0.4);
+    --accent-soft: rgba(250, 189, 47, 0.07);
+    --on-accent: #282828;
     --shadow-color: rgba(0, 0, 0, 0.5);
-    --backdrop: rgba(5, 6, 9, 0.75);
-    --header-bg: rgba(13, 14, 18, 0.85);
+    --backdrop: rgba(29, 32, 33, 0.75);
+    --header-bg: rgba(29, 32, 33, 0.85);
     color-scheme: dark;
 }
 
 :root[data-theme='light'] {
-    --bg: #f8fafc;
-    --surface: #ffffff;
-    --surface-2: #f1f5f9;
-    --surface-hover: #e9eef5;
-    --border-subtle: #e2e8f0;
-    --border: #dfe5ee;
-    --border-strong: #cbd5e1;
-    --text-strong: #0f172a;
-    --text: #1e293b;
-    --text-muted: #475569;
-    --text-faint: #64748b;
-    --accent: #6d28d9;
-    --accent-hover: #5b21b6;
-    --accent-border: rgba(109, 40, 217, 0.35);
-    --accent-soft: rgba(109, 40, 217, 0.06);
-    --on-accent: #ffffff;
-    --shadow-color: rgba(15, 23, 42, 0.12);
-    --backdrop: rgba(15, 23, 42, 0.45);
-    --header-bg: rgba(248, 250, 252, 0.85);
+    --bg: #fbf1c7;
+    --surface: #f9f5d7;
+    --surface-2: #f2e5bc;
+    --surface-hover: #ebdbb2;
+    --border-subtle: #ebdbb2;
+    --border: #d5c4a1;
+    --border-strong: #bdae93;
+    --text-strong: #282828;
+    --text: #3c3836;
+    --text-muted: #504945;
+    --text-faint: #665c54;
+    --accent: #af3a03;
+    --accent-hover: #9d0006;
+    --accent-border: rgba(175, 58, 3, 0.35);
+    --accent-soft: rgba(175, 58, 3, 0.07);
+    --on-accent: #fbf1c7;
+    --shadow-color: rgba(60, 56, 54, 0.15);
+    --backdrop: rgba(40, 40, 40, 0.45);
+    --header-bg: rgba(251, 241, 199, 0.85);
     color-scheme: light;
 }
 
