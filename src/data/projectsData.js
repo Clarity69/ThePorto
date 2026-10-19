@@ -128,7 +128,7 @@ export const otherProjects = [
 
 
    // Repo yang tidak ditampilkan di "More"
-export const hiddenRepos = ['porto', 'python', 'kc','web'];
+export const hiddenRepos = ['porto', 'python', 'kc','web','draw-io'];
 export const previewImages = {
   'dotfiles': '/projects/dots.webp',
   'wofi-config': '/projects/wofi.webp',
@@ -141,4 +141,5 @@ export const previewImages = {
   'bug_hunt': '/projects/bug-hunt-preview.webp',
   // 'kc': '/projects/kc.webp',
   // 'python': '/projects/python.webp',
+  // 'draw-io': '/projects/draw.webp',
 };
