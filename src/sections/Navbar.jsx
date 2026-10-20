@@ -8,6 +8,7 @@ const menuItems = [
   { label: 'About', href: '#about' },
   { label: 'Skills', href: '#skills' },
   { label: 'Projects', href: '#projects' },
+    { label: 'Connect', href: '#connect' },
 ];
 
 export default function Navbar() {

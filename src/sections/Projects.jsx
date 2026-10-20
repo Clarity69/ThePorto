@@ -31,8 +31,8 @@ function RepoStats({ repo }) {
           {repo.language}
         </span>
       )}
-      <span title="Stars"><FaStar size={11} /> {repo.stars}</span>
-      <span title="Forks"><FaCodeFork size={11} /> {repo.forks}</span>
+      {repo.stars > 0 && <span title="Stars"><FaStar size={11} /> {repo.stars}</span>}
+      {repo.forks > 0 && <span title="Forks"><FaCodeFork size={11} /> {repo.forks}</span>}
       {repo.updatedAt && <span>Updated {formatDate(repo.updatedAt)}</span>}
     </div>
   );

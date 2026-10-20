@@ -6,6 +6,7 @@ export const skillsData = {
     { name: "Python", icon: "python" },
     { name: "React", icon: "code" },
     { name: "Laravel", icon: "code" },
+    { name: "QML", icon: "qt" },
   ],
   tools: [
     { name: "Git & GitHub", icon: "github" },
@@ -22,6 +23,5 @@ export const skillsData = {
     { name: "Flutter", icon: "flutter" },
     { name: "SQL Databases", icon: "db" },
     { name: "Java / C / C++ / C#", icon: "code" },
-    { name: "QML", icon: "qt" },
   ],
 };

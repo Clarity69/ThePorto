@@ -3,7 +3,7 @@ import styles from '../components/about.module.css';
 export default function About() {
   const quickFacts = [
     { key: "Education", value: "Informatics Student/ STITEK Bontang" },
-    { key: "Primary Tech", value: "React, Node.js, JS/TS" },
+    { key: "Primary Tech", value: "React, Laravel, JS/TS" },
     { key: "Interests", value: "Web Dev, IoT, Data" },
     { key: "Status", value: "Open for Collaborations" },
   ];
@@ -19,7 +19,7 @@ export default function About() {
           {/* Deskripsi Narasi */}
           <div className={styles.textContent}>
             <p>
-              Hello! I'm <span className={styles.highlight}>Taro</span>, a Computer Science student with a deep interest in software development and modern web architecture.
+              Hello! I'm <span className={styles.highlight}>Taro</span>, a Informatic student with a deep interest in software development and modern web architecture.
             </p>
             <p>
               My journey in programming is driven by curiosity to understand how systems work behind the scenes. I enjoy solving complex problems, building responsive applications, and exploring new technologies such as IoT and data processing.</p>

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-const CACHE_TTL = 60 * 60 * 1000; // 1 jam
+const CACHE_TTL = 15 * 60 * 1000; // 15 menit
 
 // Ambil data dari localStorage kalau masih "segar" (< 1 jam)
 function readCache(key) {
