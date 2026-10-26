@@ -3,10 +3,24 @@
 
 <head>
   <meta charset="UTF-8" />
-  <!-- Hubungkan Favicon SVG -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/svg+xml" href="/terminal.svg" />
-  <meta name="description" content="Portfolio of Taro, an informatics student building web apps, desktop tooling, and IoT/data projects with React, JavaScript, and Linux." />
-  <title>ThePortfolio</title>
+  <title>Taro — Informatics Student &amp; Software Developer</title>
+  <meta name="description"
+    content="Portfolio of Taro, an informatics student building web apps, desktop tooling, and IoT/data projects with React, JavaScript, and Linux." />
+
+  <!-- Pasang tema sebelum React dimuat, supaya warna tidak berkedip saat reload -->
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem('theporto-theme');
+        var theme = saved === 'light' || saved === 'dark'
+          ? saved
+          : (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+        document.documentElement.dataset.theme = theme;
+      } catch (e) { }
+    })();
+  </script>
 </head>
 
 <body>

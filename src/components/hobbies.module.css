@@ -1,0 +1,137 @@
+.hobbies {
+    padding: 5rem 0;
+    border-top: 1px solid var(--border-subtle);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--gutter);
+}
+
+.categorySub {
+    font-family: monospace;
+    font-size: 0.8rem;
+    color: var(--accent);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.sectionTitle {
+    font-family: monospace;
+    font-size: clamp(1.4rem, 2.5vw + 0.8rem, 2rem);
+    font-weight: 700;
+    color: var(--text-strong);
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+}
+
+.titleHash {
+    color: var(--accent);
+}
+
+.subtitle {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    max-width: 600px;
+    line-height: 1.6;
+    margin-bottom: 3rem;
+}
+
+/* Grid otomatis: 4 kolom di layar lebar, turun sendiri sampai 1 kolom di HP */
+.grid {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+    gap: 1.25rem;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1.25rem 1.4rem 1.4rem;
+    transition: border-color .2s ease, transform .2s ease, box-shadow .2s ease;
+}
+
+.card:hover {
+    border-color: var(--accent-border);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 24px -14px var(--shadow-color);
+}
+
+/* "~/hobbies/xxx" kecil di atas, ala path terminal */
+.path {
+    font-family: monospace;
+    font-size: 0.72rem;
+    color: var(--text-faint);
+    margin-bottom: 1rem;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.icon {
+    display: grid;
+    place-items: center;
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    color: var(--accent);
+    background-color: var(--accent-soft);
+    border: 1px solid var(--accent-border);
+}
+
+.name {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--text-strong);
+}
+
+.description {
+    color: var(--text-muted);
+    font-size: 0.875rem;
+    line-height: 1.6;
+    margin-bottom: 1.1rem;
+}
+
+/* Tag selalu menempel di bawah kartu, walau panjang deskripsi berbeda */
+.tags {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-top: auto;
+}
+
+.tag {
+    font-family: monospace;
+    font-size: 0.7rem;
+    color: var(--text-muted);
+    background-color: var(--surface-2);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 0.2rem 0.5rem;
+}
+
+@media (max-width: 640px) {
+    .hobbies {
+        padding: 3.5rem 0;
+    }
+
+    .subtitle {
+        margin-bottom: 2rem;
+    }
+}
