@@ -24,7 +24,7 @@ export default function Connect() {
           </a>
 
           <a
-            href="https://www.linkedin.com/in/ahmad-taroqi-410187411/"
+            href="https://www.linkedin.com/in/ahmad-taroqi"
             className={styles.btnGhost}
             target="_blank"
             rel="noopener noreferrer"
