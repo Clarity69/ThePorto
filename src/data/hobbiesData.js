@@ -6,7 +6,7 @@ export const hobbiesData = [
         name: 'Linux Ricing',
         path: '~/hobbies/ricing',
         description: 'Customizing my Hyprland desktop — status bars, color schemes, and launchers until everything feels just right.',
-        tags: ['Hyprland', 'pywal'],
+        tags: ['Hyprland', 'pywal','Quickshell'],
     },
     {
         icon: 'server',
