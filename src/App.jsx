@@ -7,6 +7,7 @@ import Projects from './sections/Projects';
 import Connect from './sections/Connect';
 import Footer from './sections/Footer';
 // import Hobbies from './sections/Hobbies';
+import Certifications from './sections/Certifications';
 import { Analytics } from '@vercel/analytics/react';
 
 export default function App() {
@@ -45,6 +46,7 @@ export default function App() {
         <Skills />
         <Projects />
         {/* <Hobbies /> */}
+        <Certifications />
         <Connect />
         <Footer />
       </main>
