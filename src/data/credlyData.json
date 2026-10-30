@@ -1,0 +1,317 @@
+[
+  {
+    "title": "Kickstarting Application Development with Gemini Code Assist",
+    "issuer": "credly",
+    "org": "Google Cloud",
+    "date": "2026-08-03",
+    "url": "https://www.credly.com/badges/99fb5e2e-9e25-49d2-a2e8-f55cd38e8f1a",
+    "image": "/certs/credly/kickstarting-application-development-with-gemini-code-assist.webp",
+    "skills": [
+      "Cloud Function",
+      "Debugging",
+      "Gemini Code Assist"
+    ]
+  },
+  {
+    "title": "Automate Data Capture at Scale with Document AI Skill Badge",
+    "issuer": "credly",
+    "org": "Google Cloud",
+    "date": "2026-01-24",
+    "url": "https://www.credly.com/badges/a30ff1d4-2aca-411f-8013-c686d745454a",
+    "image": "/certs/credly/automate-data-capture-at-scale-with-document-ai-skill-badge.webp",
+    "skills": [
+      "Data Capture",
+      "Data Extraction",
+      "Data Processing",
+      "Document AI"
+    ]
+  },
+  {
+    "title": "Build Real World AI Applications with Gemini and Imagen Skill Badge",
+    "issuer": "credly",
+    "org": "Google Cloud",
+    "date": "2026-01-24",
+    "url": "https://www.credly.com/badges/1d4bbe18-4b42-4f63-aa41-0b4e76d7f454",
+    "image": "/certs/credly/build-real-world-ai-applications-with-gemini-and-imagen-skil.webp",
+    "skills": [
+      "Gemini",
+      "Imagen",
+      "Natural Language Processing (NLP)",
+      "Vertex AI"
+    ]
+  },
+  {
+    "title": "Build Serverless Applications with Cloud Run Functions",
+    "issuer": "credly",
+    "org": "Google Cloud",
+    "date": "2026-01-24",
+    "url": "https://www.credly.com/badges/30ab5e3f-a7db-4171-b274-70e0c55bc3d6",
+    "image": "/certs/credly/build-serverless-applications-with-cloud-run-functions.webp",
+    "skills": [
+      "Cloud Functions",
+      "Cloud Storage",
+      "Google Cloud Console"
+    ]
+  },
+  {
+    "title": "Configure Service Accounts and IAM Roles for Google Cloud Skill Badge",
+    "issuer": "credly",
+    "org": "Google Cloud",
+    "date": "2026-01-24",
+    "url": "https://www.credly.com/badges/e8daa233-51a3-48b5-9609-fd06e2a353b9",
+    "image": "/certs/credly/configure-service-accounts-and-iam-roles-for-google-cloud-sk.webp",
+    "skills": [
+      "BigQuery",
+      "IAM",
+      "IAM Roles"
+    ]
+  },
+  {
+    "title": "Create ML Models with BigQuery ML Skill Badge",
+    "issuer": "credly",
+    "org": "Google Cloud",
+    "date": "2026-01-24",
+    "url": "https://www.credly.com/badges/dc553a1e-df6d-47e8-88ed-6986906bc7f8",
+    "image": "/certs/credly/create-ml-models-with-bigquery-ml-skill-badge.webp",
+    "skills": [
+      "BigQuery ML",
+      "Dialogflow",
+      "Forecasting",
+      "Machine Learning"
+    ]
+  },
+  {
+    "title": "Develop GenAI Apps with Gemini and Streamlit Skill Badge",
+    "issuer": "credly",
+    "org": "Google Cloud",
+    "date": "2026-01-24",
+    "url": "https://www.credly.com/badges/37905f50-0499-42d7-92a7-595920fd2968",
+    "image": "/certs/credly/develop-genai-apps-with-gemini-and-streamlit-skill-badge.webp",
+    "skills": [
+      "Application Development",
+      "Gemini",
+      "Generative AI",
+      "Python"
+    ]
+  },
+  {
+    "title": "Develop Serverless Applications on Cloud Run Skill Badge",
+    "issuer": "credly",
+    "org": "Google Cloud",
+    "date": "2026-01-24",
+    "url": "https://www.credly.com/badges/d2a7a24d-9664-461b-a2cc-fc136b000a14",
+    "image": "/certs/credly/develop-serverless-applications-on-cloud-run-skill-badge.webp",
+    "skills": [
+      "Cloud Build",
+      "Cloud Run",
+      "Cloud Storage",
+      "Containers"
+    ]
+  },
+  {
+    "title": "Engineer Data for Predictive Modeling with BigQuery ML Skill Badge",
+    "issuer": "credly",
+    "org": "Google Cloud",
+    "date": "2026-01-24",
+    "url": "https://www.credly.com/badges/f06cb31f-7183-4af6-be80-f27779c4326c",
+    "image": "/certs/credly/engineer-data-for-predictive-modeling-with-bigquery-ml-skill.webp",
+    "skills": [
+      "BigQuery",
+      "BigQuery ML",
+      "Data Engineering",
+      "Data Ingestion"
+    ]
+  },
+  {
+    "title": "Enhance Gemini Model Capabilities",
+    "issuer": "credly",
+    "org": "Google Cloud",
+    "date": "2026-01-24",
+    "url": "https://www.credly.com/badges/a47a1ee0-f93f-4a17-948a-455504dd0e72",
+    "image": "/certs/credly/enhance-gemini-model-capabilities.webp",
+    "skills": [
+      "Artificial General Intelligence",
+      "Artificial Intelligence (AI)",
+      "Gemini",
+      "Intelligent Systems"
+    ]
+  },
+  {
+    "title": "Explore Generative AI with the Vertex AI Gemini API Skill Badge",
+    "issuer": "credly",
+    "org": "Google Cloud",
+    "date": "2026-01-24",
+    "url": "https://www.credly.com/badges/fb60e4c1-4c40-4f6b-bbc2-68e7ce0e6b34",
+    "image": "/certs/credly/explore-generative-ai-with-the-vertex-ai-gemini-api-skill-ba.webp",
+    "skills": [
+      "Gemini",
+      "Generative AI",
+      "Python",
+      "Vertex AI"
+    ]
+  },
+  {
+    "title": "Implement Cloud Security Fundamentals on Google Cloud Skill Badge",
+    "issuer": "credly",
+    "org": "Google Cloud",
+    "date": "2026-01-24",
+    "url": "https://www.credly.com/badges/8c59edc9-0b8e-4755-ae73-58a55f32fee5",
+    "image": "/certs/credly/implement-cloud-security-fundamentals-on-google-cloud-skill-.webp",
+    "skills": [
+      "App Deployment",
+      "Authentication",
+      "Cloud Key Management",
+      "GKE"
+    ]
+  },
+  {
+    "title": "Implement Multimodal Vector Search with BigQuery",
+    "issuer": "credly",
+    "org": "Google Cloud",
+    "date": "2026-01-24",
+    "url": "https://www.credly.com/badges/e4c94f6e-5479-4165-8182-dcb1d2d45ebc",
+    "image": "/certs/credly/implement-multimodal-vector-search-with-bigquery.webp",
+    "skills": [
+      "Code Generation",
+      "Generative AI",
+      "Vector Databases"
+    ]
+  },
+  {
+    "title": "Inspect Rich Documents with Gemini Multimodality and Multimodal RAG Skill Badge",
+    "issuer": "credly",
+    "org": "Google Cloud",
+    "date": "2026-01-24",
+    "url": "https://www.credly.com/badges/8aab5d12-3f35-47df-b2dd-116eef0811e7",
+    "image": "/certs/credly/inspect-rich-documents-with-gemini-multimodality-and-multimo.webp",
+    "skills": [
+      "Gemini",
+      "Multimodality",
+      "RAG",
+      "Vertex AI"
+    ]
+  },
+  {
+    "title": "Mitigate Threats and Vulnerabilities with Security Command Center Skill Badge",
+    "issuer": "credly",
+    "org": "Google Cloud",
+    "date": "2026-01-24",
+    "url": "https://www.credly.com/badges/56b41dab-6e98-4f01-926d-9810b7020820",
+    "image": "/certs/credly/mitigate-threats-and-vulnerabilities-with-security-command-c.webp",
+    "skills": [
+      "Beyondcorp Enterprise Security",
+      "Cloud Security",
+      "Security Command Center"
+    ]
+  },
+  {
+    "title": "Monitor and Log with Google Cloud Operations Suite Skill Badge",
+    "issuer": "credly",
+    "org": "Google Cloud",
+    "date": "2026-01-24",
+    "url": "https://www.credly.com/badges/3a5c2fad-8bef-4903-8f5b-b4379ffab624",
+    "image": "/certs/credly/monitor-and-log-with-google-cloud-operations-suite-skill-bad.webp",
+    "skills": [
+      "Alerts",
+      "Cloud Functions",
+      "Compute Engine",
+      "Dashboard"
+    ]
+  },
+  {
+    "title": "Monitoring in Google Cloud Skill Badge",
+    "issuer": "credly",
+    "org": "Google Cloud",
+    "date": "2026-01-24",
+    "url": "https://www.credly.com/badges/fa9e2a4a-27ff-4293-8d26-794ac3c2f518",
+    "image": "/certs/credly/monitoring-in-google-cloud-skill-badge.webp",
+    "skills": [
+      "Cloud Monitoring",
+      "Dashboard",
+      "Google Cloud Platform (GCP)"
+    ]
+  },
+  {
+    "title": "Perform Predictive Data Analysis in BigQuery Skill Badge",
+    "issuer": "credly",
+    "org": "Google Cloud",
+    "date": "2026-01-24",
+    "url": "https://www.credly.com/badges/f696dcc8-67a7-4a96-9894-9dc3463416ad",
+    "image": "/certs/credly/perform-predictive-data-analysis-in-bigquery-skill-badge.webp",
+    "skills": [
+      "BigQuery",
+      "BigQuery ML",
+      "Data Science",
+      "Machine Learning (ML)"
+    ]
+  },
+  {
+    "title": "Prepare Data for ML APIs on Google Cloud Skill Badge",
+    "issuer": "credly",
+    "org": "Google Cloud",
+    "date": "2026-01-24",
+    "url": "https://www.credly.com/badges/0db134e0-dda2-493f-8c19-25f38885e798",
+    "image": "/certs/credly/prepare-data-for-ml-apis-on-google-cloud-skill-badge.webp",
+    "skills": [
+      "Cloud Natural Language API",
+      "Data Pipeline",
+      "Data Preparation",
+      "DataProc"
+    ]
+  },
+  {
+    "title": "Prompt Design in Vertex AI Skill Badge",
+    "issuer": "credly",
+    "org": "Google Cloud",
+    "date": "2026-01-24",
+    "url": "https://www.credly.com/badges/4b14f216-90cc-4e79-b5d4-e65deef5229b",
+    "image": "/certs/credly/prompt-design-in-vertex-ai-skill-badge.webp",
+    "skills": [
+      "Artificial Intelligence (AI)",
+      "Gemini APIs",
+      "Generative AI",
+      "Prompt Engineering"
+    ]
+  },
+  {
+    "title": "The Basics of Google Cloud Compute Skill Badge",
+    "issuer": "credly",
+    "org": "Google Cloud",
+    "date": "2026-01-24",
+    "url": "https://www.credly.com/badges/af382986-47ad-4716-a3fa-84aa670806e7",
+    "image": "/certs/credly/the-basics-of-google-cloud-compute-skill-badge.webp",
+    "skills": [
+      "Compute Engine",
+      "Persistent Disks",
+      "Virtual Machines",
+      "Web Servers"
+    ]
+  },
+  {
+    "title": "Use APIs to Work with Cloud Storage Skill Badge",
+    "issuer": "credly",
+    "org": "Google Cloud",
+    "date": "2026-01-24",
+    "url": "https://www.credly.com/badges/d09356aa-cc06-44e7-9791-b8bfd98b6e2a",
+    "image": "/certs/credly/use-apis-to-work-with-cloud-storage-skill-badge.webp",
+    "skills": [
+      "API",
+      "API Management",
+      "Cloud Storage"
+    ]
+  },
+  {
+    "title": "Use Machine Learning APIs on Google Cloud Skill Badge",
+    "issuer": "credly",
+    "org": "Google Cloud",
+    "date": "2026-01-24",
+    "url": "https://www.credly.com/badges/e3319eae-61aa-455d-b131-f24af0b9cba1",
+    "image": "/certs/credly/use-machine-learning-apis-on-google-cloud-skill-badge.webp",
+    "skills": [
+      "BigQuery",
+      "Cloud Natural Language API",
+      "Cloud Translation",
+      "Cloud Vision API"
+    ]
+  }
+]
