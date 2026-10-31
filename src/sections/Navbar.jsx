@@ -6,9 +6,9 @@ import styles from '../components/navbar.module.css';
 const menuItems = [
   { label: 'Home', href: '#home' },
   { label: 'About', href: '#about' },
-  { label: 'Skills', href: '#skills' },
   { label: 'Projects', href: '#projects' },
-    { label: 'Connect', href: '#connect' },
+  { label: 'Certificates', href: '#certifications' },
+  { label: 'Connect', href: '#connect' },
 ];
 
 export default function Navbar() {
