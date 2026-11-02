@@ -100,7 +100,7 @@ export const certificationsData = [
 export const issuers = {
   dicoding: 'Dicoding',
   google: 'Google Skills',
-  credly: 'Credly',
+  credly: 'Google Cloud',
 };
 
 // Link verifikasi: pakai url manual, atau dibuat dari id Dicoding
