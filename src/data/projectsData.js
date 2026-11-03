@@ -15,18 +15,16 @@ export const featuredProjects = [
   },
   {
     id: 2,
-    fileName: "App.jsx",
-    fileType: "jsx",
-    title: "Personal Notes App V2",
-    image: "/projects/home.webp",
-    description: "Full-featured personal notes web application integrated with a RESTful API, supporting user authentication, responsive theme switching, and multi-language capabilities.",
+    fileName: "hyprland.conf",
+    title: "dotfiles",
+    image: "/projects/dots.webp",
+    description: "My Linux desktop setup — Hyprland window manager, Quickshell bar, and pywal-based theming, kept in one repo so the whole rice can be restored on a fresh install.",
     points: [
-      "Architected using React Hooks, Context API, and custom hooks for scalable global state management.",
-      "Implemented robust user authentication, protected routes, dynamic dark/light mode, and seamless ID/EN localization."
+      "Consistent colors across the desktop, generated from the wallpaper with pywal",
+      "Organized configs that are easy to clone and reuse",
     ],
-    tech: ["React", "JavaScript", "REST API", "CSS"],
-    github: "https://github.com/Clarity69/personal-notes-app",
-    demo: "https://personal-notes-app-mu.vercel.app/"
+    tech: ["Hyprland", "Quickshell", "pywal", "Shell"],
+    github: "https://github.com/Clarity69/dotfiles",
   },
   {
     id: 3,

@@ -1,9 +1,12 @@
-import { 
-  FaHtml5, FaCss3Alt, FaSquareJs, FaPython, 
-  FaGithub, FaFigma, FaNodeJs, FaDatabase, FaCode, FaChartLine, FaMicrochip 
+import {
+  FaHtml5, FaCss3Alt, FaSquareJs, FaPython, FaReact, FaLaravel,
+  FaGithub, FaFigma, FaNodeJs, FaDatabase, FaCode, FaChartLine, FaMicrochip,
 } from 'react-icons/fa6';
-import { SiFirebase, SiFlutter, SiSupabase, SiQt } from 'react-icons/si';
-import { IoLogoVercel } from 'react-icons/io5'; // Menggunakan IoLogoVercel dari io5
+import {
+  SiFirebase, SiFlutter, SiSupabase, SiQt,
+  SiTypescript, SiNextdotjs, SiCplusplus, SiMysql,
+} from 'react-icons/si';
+import { IoLogoVercel } from 'react-icons/io5';
 import { skillsData } from '../data/skillsData';
 import styles from '../components/skills.module.css';
 
@@ -13,17 +16,23 @@ const getIcon = (type) => {
     case 'html': return <FaHtml5 className={styles.badgeIcon} />;
     case 'css': return <FaCss3Alt className={styles.badgeIcon} />;
     case 'js': return <FaSquareJs className={styles.badgeIcon} />;
+    case 'ts': return <SiTypescript className={styles.badgeIcon} />;
     case 'python': return <FaPython className={styles.badgeIcon} />;
+    case 'react': return <FaReact className={styles.badgeIcon} />;
+    case 'next': return <SiNextdotjs className={styles.badgeIcon} />;
+    case 'laravel': return <FaLaravel className={styles.badgeIcon} />;
+    case 'qt': return <SiQt className={styles.badgeIcon} />;
+    case 'cpp': return <SiCplusplus className={styles.badgeIcon} />;
     case 'github': return <FaGithub className={styles.badgeIcon} />;
-    case 'supabase':return <SiSupabase className={styles.badgeIcon}/>;
     case 'figma': return <FaFigma className={styles.badgeIcon} />;
-    case 'vercel': return <IoLogoVercel className={styles.badgeIcon} />; // Pastikan di sini memanggil IoLogoVercel, BUKAN FaVercel
+    case 'vercel': return <IoLogoVercel className={styles.badgeIcon} />;
+    case 'supabase': return <SiSupabase className={styles.badgeIcon} />;
     case 'firebase': return <SiFirebase className={styles.badgeIcon} />;
-    case 'iot': return <FaMicrochip className={styles.badgeIcon} />;
-    case 'data': return <FaChartLine className={styles.badgeIcon} />;
     case 'node': return <FaNodeJs className={styles.badgeIcon} />;
     case 'flutter': return <SiFlutter className={styles.badgeIcon} />;
-    case 'qt': return <SiQt className={styles.badgeIcon} />;   // ← baru
+    case 'iot': return <FaMicrochip className={styles.badgeIcon} />;
+    case 'data': return <FaChartLine className={styles.badgeIcon} />;
+    case 'mysql': return <SiMysql className={styles.badgeIcon} />;
     case 'db': return <FaDatabase className={styles.badgeIcon} />;
     default: return <FaCode className={styles.badgeIcon} />;
   }

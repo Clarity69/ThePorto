@@ -4,8 +4,8 @@ export const skillsData = {
     { name: "CSS3", icon: "css" },
     { name: "JavaScript", icon: "js" },
     { name: "Python", icon: "python" },
-    { name: "React", icon: "code" },
-    { name: "Laravel", icon: "code" },
+    { name: "React", icon: "react" },
+    { name: "Laravel", icon: "laravel" },
     { name: "QML", icon: "qt" },
   ],
   tools: [
@@ -17,11 +17,11 @@ export const skillsData = {
   exploring: [
     { name: "IoT", icon: "iot" },
     { name: "Data Mining", icon: "data" },
-    { name: "TypeScript", icon: "code" },
-    { name: "Next.js", icon: "code" },
+    { name: "TypeScript", icon: "ts" },
+    { name: "Next.js", icon: "next" },
     { name: "Node.js", icon: "node" },
     { name: "Flutter", icon: "flutter" },
     { name: "SQL Databases", icon: "db" },
-    { name: "Java / C / C++ / C#", icon: "code" },
+    { name: "C / C++ / C#", icon: "cpp" },
   ],
 };
